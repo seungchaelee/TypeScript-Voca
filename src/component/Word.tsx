@@ -24,7 +24,6 @@ export default function Word({ words: w }: IProps) {
   }
 
   const toggleDone = async () => {
-    // setIsDone(!isDone);
     const res = await fetch(`http://localhost:3001/words/${words.id}`, {
       method: "PUT",
       headers: {
