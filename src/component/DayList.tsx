@@ -1,22 +1,14 @@
-import React from "react";
 import { Link } from "react-router-dom";
 import useFetch from "../hooks/useFetch";
 import Loading from "./Loading";
 
+export interface IDay {
+  id: number;
+  day: number;
+}
+
 export default function DayList() {
-  // const [days, setDays] = useState([]);
-
-  // useEffect(() => {
-  //   fetch('http://localhost:3001/days')
-  //   .then(res => {
-  //     return res.json()
-  //   })
-  //   .then(data => {
-  //     setDays(data);
-  //   });
-  // }, []);
-
-  const days = useFetch("http://localhost:3001/days");
+  const days: IDay[] = useFetch("http://localhost:3001/days");
 
   return (
     <>

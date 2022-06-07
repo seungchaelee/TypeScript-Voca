@@ -1,6 +1,6 @@
 import { useState, useEffect, useCallback } from "react";
 
-export default function useFetch(url) {
+export default function useFetch(url: string) {
   const [data, setData] = useState([]);
 
   const loadJson = useCallback(async function () {

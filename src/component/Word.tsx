@@ -1,7 +1,19 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import Loading from "./Loading";
 
-export default function Word({ words: w }) {
+interface IProps {
+  words: IWord;
+}
+
+export interface IWord {
+  day: string;
+  eng: string;
+  kor: string;
+  isDone: boolean;
+  id: number;
+}
+
+export default function Word({ words: w }: IProps) {
   const [words, setWords] = useState(w);
   const [isShow, setIsShow] = useState(false);
   const [isDone, setIsDone] = useState(words.isDone);
@@ -41,7 +53,10 @@ export default function Word({ words: w }) {
         });
 
         if (res.ok) {
-          setWords({ id: 0 });
+          setWords({
+            ...words,
+            id: 0,
+          });
           setIsLoading(false);
           alert('삭제 완료');
         }

@@ -1,40 +1,43 @@
 import React, { useRef, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import useFetch from "../hooks/useFetch";
+import { IDay } from "./DayList";
 import Loading from "./Loading";
 
 export default function CreateWord() {
-  const days = useFetch("http://localhost:3001/days");
+  const days: IDay[] = useFetch("http://localhost:3001/days");
   const navigate = useNavigate();
   const [isLoading, setIsLoading] = useState(false);
-  const engRef = useRef(null);
-  const korRef = useRef(null);
-  const dayRef = useRef(null);
+  const engRef = useRef<HTMLInputElement>(null);
+  const korRef = useRef<HTMLInputElement>(null);
+  const dayRef = useRef<HTMLSelectElement>(null);
 
-  const onSubmit = async (e) => {
+  const onSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // console.log(`Eng : ${engRef.current.value}`);
-    // console.log(`Kor : ${korRef.current.value}`);
-    // console.log(`Day : ${dayRef.current.value}`);
 
-    if (!isLoading) {
+    if (!isLoading && dayRef.current && engRef.current && korRef.current) {
       setIsLoading(true);
+
+      const day = dayRef.current.value;
+      const eng = engRef.current.value;
+      const kor = korRef.current.value;
+
       const res = await fetch(`http://localhost:3001/words/`, {
         method: "POST",
         headers: {
           'content-Type': 'application/json',
         },
         body: JSON.stringify({
-          day: dayRef.current.value,
-          eng: engRef.current.value,
-          kor: korRef.current.value,
-          isDone: false
+          day,
+          eng,
+          kor,
+          isDone: false,
         }),
       });
 
       if (res.ok) {
         alert("생성 완료");
-        navigate(`/day/${dayRef.current.value}`);
+        navigate(`/day/${day}`);
         setIsLoading(false);
       }
       const data = await res.json();
