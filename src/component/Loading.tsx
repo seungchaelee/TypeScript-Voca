@@ -20,7 +20,7 @@ export default function Loading({ text, speed }: ILoading) {
       clearInterval(loadingInterval);
     }
 
-  }, [loadingText]);
+  }, [loadingText, speed, text]);
   return (<p className="content">{loadingText}</p>);
 }
 
