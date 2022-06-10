@@ -19,8 +19,8 @@ export default function Loading({ text, speed }: ILoading) {
     return () => {
       clearInterval(loadingInterval);
     }
-
   }, [loadingText, speed, text]);
+
   return (<p className="content">{loadingText}</p>);
 }
 
