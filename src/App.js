@@ -29,7 +29,6 @@ function App() {
             <Route path='*' element={<EmptyPage />} />
           </Routes>
         </Background>
-
       </div>
     </BrowserRouter>
   );
