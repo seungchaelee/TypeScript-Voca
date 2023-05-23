@@ -1,6 +1,6 @@
 # React TypeScript Project
 
-React, TypeScript, json서버를 이용한 토익단어 프로젝트🎖
+React, TypeScript, json-server 통신을 이용한 토익단어 프로젝트🎖
 
 - **반드시 아래 Setup과 Development 부분을 읽어보세요.**
 - 문의는 id4720@gmail.com
