@@ -23,7 +23,7 @@ function App() {
       <div className="App">
         <Background>
           <GoogleLoginButton />
-          {/* <SocialKakao /> */}
+          <SocialKakao />
           <Header />
           <Routes>
             <Route exact path='/' element={<DayList />} />
