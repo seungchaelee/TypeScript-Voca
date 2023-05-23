@@ -27,3 +27,8 @@ npx json-server --watch ./src/db/data.json --port 3001
 # Visit http://localhost:3001/days from your browser (Chrome)
 # Visit http://localhost:3001/words from your browser (Chrome)
 ```
+
+```sh
+배포사이트
+# Visit https://master--euphonious-lily-276dfb.netlify.app/ from your browser (Chrome)
+```
