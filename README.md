@@ -30,3 +30,4 @@ npx json-server --watch ./src/db/data.json --port 3001
 
 배포 사이트
 1. [TOEIC](https://master--euphonious-lily-276dfb.netlify.app/)
+2. 서버랑 통신하면 더 많은 데이터를 볼수 있습니다.
