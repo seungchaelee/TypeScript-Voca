@@ -30,5 +30,5 @@ npx json-server --watch ./src/db/data.json --port 3001
 
 ```sh
 배포사이트
-# Visit https://master--euphonious-lily-276dfb.netlify.app/ from your browser (Chrome)
+1. [TOEIC](https://master--euphonious-lily-276dfb.netlify.app/)
 ```
