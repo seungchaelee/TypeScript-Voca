@@ -7,6 +7,7 @@ import Day from './component/Day';
 import CreateWord from './component/CreateWord';
 import CreateDay from './component/CreateDay';
 import EmptyPage from './component/EmptyPage';
+import GoogleLoginButton from "./component/GoogleLogin";
 
 const Background = styled.div`
   background-color: #e6e6fa;
@@ -20,6 +21,7 @@ function App() {
     <BrowserRouter>
       <div className="App">
         <Background>
+          <GoogleLoginButton />
           <Header />
           <Routes>
             <Route exact path='/' element={<DayList />} />

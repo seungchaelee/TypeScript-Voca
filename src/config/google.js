@@ -1,0 +1,1 @@
+export const GOOGLE_LOGIN_API_KEY = process.env.REACT_APP_GOOGLE_LOGIN_API_KEY
