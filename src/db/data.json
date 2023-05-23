@@ -27,92 +27,370 @@
     {
       "day": 7,
       "id": 7
+    },
+    {
+      "day": 8,
+      "id": 8
+    },
+    {
+      "day": 9,
+      "id": 9
+    },
+    {
+      "day": 10,
+      "id": 10
     }
   ],
   "words": [
     {
-      "id": 1,
-      "day": 1,
-      "eng": "book",
-      "kor": "책",
-      "isDone": false
-    },
-    {
-      "id": 3,
-      "day": 2,
-      "eng": "car",
-      "kor": "자동차",
-      "isDone": false
-    },
-    {
-      "id": 5,
-      "day": 3,
-      "eng": "school",
-      "kor": "학교",
-      "isDone": false
-    },
-    {
-      "id": 6,
-      "day": 3,
-      "eng": "pencil",
-      "kor": "연필",
-      "isDone": false
-    },
-    {
-      "day": "3",
-      "eng": "window",
-      "kor": "창문",
+      "day": "1",
+      "eng": "sophisticated",
+      "kor": "세련된, 정교한, 복잡한",
       "isDone": false,
-      "id": 7
+      "id": 17
     },
     {
-      "day": "3",
-      "eng": "house",
-      "kor": "집",
+      "day": "1",
+      "eng": "sophistication",
+      "kor": "세련, 정교함",
       "isDone": false,
-      "id": 8
+      "id": 18
+    },
+    {
+      "day": "1",
+      "eng": "consecutive",
+      "kor": "연속적인, 연이은",
+      "isDone": false,
+      "id": 19
+    },
+    {
+      "day": "1",
+      "eng": "consecutively",
+      "kor": "연속적으로",
+      "isDone": false,
+      "id": 20
+    },
+    {
+      "day": "1",
+      "eng": "quality",
+      "kor": "질, 품질",
+      "isDone": false,
+      "id": 21
+    },
+    {
+      "day": "1",
+      "eng": "completely",
+      "kor": "완전히",
+      "isDone": false,
+      "id": 22
+    },
+    {
+      "day": "1",
+      "eng": " complete",
+      "kor": "완료하다",
+      "isDone": false,
+      "id": 23
+    },
+    {
+      "day": "1",
+      "eng": "completion",
+      "kor": "완료, 완성",
+      "isDone": false,
+      "id": 24
+    },
+    {
+      "day": "1",
+      "eng": "information",
+      "kor": "정보",
+      "isDone": false,
+      "id": 25
+    },
+    {
+      "day": "1",
+      "eng": "deliberation",
+      "kor": "토의, 숙고, 신중함",
+      "isDone": false,
+      "id": 26
     },
     {
       "day": "2",
-      "eng": "mouse",
-      "kor": "쥐",
+      "eng": " formerly",
+      "kor": "이전에, 예전에",
       "isDone": false,
-      "id": 9
+      "id": 27
+    },
+    {
+      "day": "2",
+      "eng": "conveniently",
+      "kor": "편리하게",
+      "isDone": false,
+      "id": 28
+    },
+    {
+      "day": "2",
+      "eng": "convenient",
+      "kor": "편리한",
+      "isDone": false,
+      "id": 29
+    },
+    {
+      "day": "2",
+      "eng": " increase",
+      "kor": "증가하다, 증가, 인상",
+      "isDone": false,
+      "id": 30
+    },
+    {
+      "day": "2",
+      "eng": "decrease",
+      "kor": "줄다, 감소하다, 감소, 하락",
+      "isDone": false,
+      "id": 31
+    },
+    {
+      "day": "3",
+      "eng": "consistency",
+      "kor": "일관성, 한결같음",
+      "isDone": false,
+      "id": 32
+    },
+    {
+      "day": "3",
+      "eng": "inconsistency",
+      "kor": "불일치",
+      "isDone": false,
+      "id": 33
+    },
+    {
+      "day": "3",
+      "eng": "enhance",
+      "kor": "(가치를)높이다, 향상시키다",
+      "isDone": false,
+      "id": 34
+    },
+    {
+      "day": "3",
+      "eng": "establish",
+      "kor": "설립하다, 수립하다",
+      "isDone": false,
+      "id": 35
+    },
+    {
+      "day": "3",
+      "eng": "estimate",
+      "kor": "추정하다 / 추정치",
+      "isDone": false,
+      "id": 36
     },
     {
       "day": "4",
-      "eng": "monkey",
-      "kor": "원숭이",
+      "eng": "impressive",
+      "kor": "인상적인, 인상깊은, 굉장한",
       "isDone": false,
-      "id": 10
+      "id": 37
     },
     {
       "day": "4",
-      "eng": "apple",
-      "kor": "사과",
+      "eng": "impression",
+      "kor": "인상, 감명",
       "isDone": false,
-      "id": 11
+      "id": 38
     },
     {
-      "day": "6",
-      "eng": "bye",
-      "kor": "잘가",
+      "day": "4",
+      "eng": "trensfer",
+      "kor": "옮기다, 보내다, 이동하다, 이동시키다",
       "isDone": false,
-      "id": 14
+      "id": 39
     },
     {
-      "day": "7",
-      "eng": "seven",
-      "kor": "7",
+      "day": "4",
+      "eng": "reduce",
+      "kor": "줄이다, 낯추다",
       "isDone": false,
-      "id": 15
+      "id": 40
+    },
+    {
+      "day": "4",
+      "eng": "beware",
+      "kor": "조심하다, 주의하다",
+      "isDone": false,
+      "id": 41
     },
     {
       "day": "5",
-      "eng": "FiveGuys",
-      "kor": "다섯 남자들",
+      "eng": "innate",
+      "kor": "타고난, 선천적인",
       "isDone": false,
-      "id": 16
+      "id": 42
+    },
+    {
+      "day": "5",
+      "eng": "restore",
+      "kor": "회복시키다, 복구시키다",
+      "isDone": false,
+      "id": 43
+    },
+    {
+      "day": "5",
+      "eng": "necessary",
+      "kor": "필요한",
+      "isDone": false,
+      "id": 44
+    },
+    {
+      "day": "5",
+      "eng": "health",
+      "kor": "건강",
+      "isDone": false,
+      "id": 45
+    },
+    {
+      "day": "5",
+      "eng": "healthy",
+      "kor": "건강한",
+      "isDone": false,
+      "id": 46
+    },
+    {
+      "day": "6",
+      "eng": "renovate",
+      "kor": "개조하다, 수리하다",
+      "isDone": false,
+      "id": 47
+    },
+    {
+      "day": "6",
+      "eng": "renovation",
+      "kor": "수리, 수선, 개조",
+      "isDone": false,
+      "id": 48
+    },
+    {
+      "day": "6",
+      "eng": "arise",
+      "kor": "생기다, 발생하다",
+      "isDone": false,
+      "id": 49
+    },
+    {
+      "day": "6",
+      "eng": "recommend",
+      "kor": "추천하다",
+      "isDone": false,
+      "id": 50
+    },
+    {
+      "day": "6",
+      "eng": "recommendation",
+      "kor": "추천",
+      "isDone": false,
+      "id": 51
+    },
+    {
+      "day": "7",
+      "eng": "collateral",
+      "kor": "담보물, 부수적인",
+      "isDone": false,
+      "id": 52
+    },
+    {
+      "day": "7",
+      "eng": "personality",
+      "kor": "성격, 개성",
+      "isDone": false,
+      "id": 53
+    },
+    {
+      "day": "7",
+      "eng": "appearance",
+      "kor": "모습, 외모, 출현",
+      "isDone": false,
+      "id": 54
+    },
+    {
+      "day": "7",
+      "eng": "certain",
+      "kor": "확실한, 틀림없는, 확신하는",
+      "isDone": false,
+      "id": 55
+    },
+    {
+      "day": "7",
+      "eng": "uncertain",
+      "kor": "확신이 없는, 불확실한",
+      "isDone": false,
+      "id": 56
+    },
+    {
+      "day": "8",
+      "eng": "delicate",
+      "kor": "섬세한, 민감한, 연약한, 다치기 쉬운",
+      "isDone": false,
+      "id": 57
+    },
+    {
+      "day": "8",
+      "eng": "disturb",
+      "kor": "방해하다, 흩뜨리다",
+      "isDone": false,
+      "id": 58
+    },
+    {
+      "day": "8",
+      "eng": "speculate",
+      "kor": "추측하다, 짐작하다",
+      "isDone": false,
+      "id": 59
+    },
+    {
+      "day": "8",
+      "eng": "speculation",
+      "kor": "추측, 짐작",
+      "isDone": false,
+      "id": 60
+    },
+    {
+      "day": "8",
+      "eng": "scenery",
+      "kor": "경치, 풍경",
+      "isDone": false,
+      "id": 61
+    },
+    {
+      "day": "9",
+      "eng": "consist",
+      "kor": "이루어지다, 구성되다",
+      "isDone": false,
+      "id": 62
+    },
+    {
+      "day": "9",
+      "eng": "consist of",
+      "kor": "~으로 구성되다",
+      "isDone": false,
+      "id": 63
+    },
+    {
+      "day": "9",
+      "eng": "consistent",
+      "kor": "한결같은, 일관된",
+      "isDone": false,
+      "id": 64
+    },
+    {
+      "day": "9",
+      "eng": "deficit",
+      "kor": "적자, 부족액",
+      "isDone": false,
+      "id": 65
+    },
+    {
+      "day": "9",
+      "eng": "symptom",
+      "kor": "증상",
+      "isDone": false,
+      "id": 66
     }
   ]
 }
