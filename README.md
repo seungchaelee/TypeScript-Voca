@@ -28,7 +28,5 @@ npx json-server --watch ./src/db/data.json --port 3001
 # Visit http://localhost:3001/words from your browser (Chrome)
 ```
 
-```sh
-배포사이트
+배포 사이트
 1. [TOEIC](https://master--euphonious-lily-276dfb.netlify.app/)
-```
