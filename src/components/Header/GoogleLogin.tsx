@@ -1,6 +1,6 @@
 import { GoogleLogin } from "@react-oauth/google";
 import { GoogleOAuthProvider } from "@react-oauth/google";
-import { GOOGLE_LOGIN_API_KEY } from "../config/google";
+import { GOOGLE_LOGIN_API_KEY } from "../../config/google";
 
 const GoogleLoginButton = ({
   onGoogleLogin,

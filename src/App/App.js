@@ -1,14 +1,14 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import './App.css';
 import styled from "styled-components";
-import Header from './component/Header';
-import DayList from './component/DayList';
-import Day from './component/Day';
-import CreateWord from './component/CreateWord';
-import CreateDay from './component/CreateDay';
-import EmptyPage from './component/EmptyPage';
-import GoogleLoginButton from "./component/GoogleLogin";
-import SocialKakao from "./component/KakaoLogin";
+import Header from '../components/Header/Header';
+import DayList from '../components/Page/DayList';
+import Day from '../components/Page/Day';
+import CreateWord from '../components/Page/CreateWord';
+import CreateDay from '../components/Page/CreateDay';
+import EmptyPage from '../components/Page/EmptyPage';
+import GoogleLoginButton from "../components/Header/GoogleLogin";
+import SocialKakao from "../components/Header/KakaoLogin";
 
 const Background = styled.div`
   background-color: #e6e6fa;

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Loading from "./Loading";
+import Loading from "../Loading/Loading";
 
 interface IProps {
   words: IWord;
