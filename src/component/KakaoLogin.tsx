@@ -1,12 +1,15 @@
 import KakaoLogin from "react-kakao-login";
 
-const SocialKakao = () => {
-  const kakaoClientId = 'JavaScript KEY'
-  const kakaoOnSuccess = async (data) => {
+const SocialKakao = ({
+  kakaoClientId= 'JavaScript KEY',
+}: {
+  kakaoClientId: string;
+}) => {
+  const kakaoOnSuccess = async (data: any) => {
     console.log(data)
     const idToken = data.response.id_token  // 인가코드 백엔드로 전달
   }
-  const kakaoOnFailure = (error) => {
+  const kakaoOnFailure = (error: any) => {
     console.log(error);
   };
   return (

@@ -7,7 +7,7 @@ const GoogleLoginButton = ({
   clientId = `${GOOGLE_LOGIN_API_KEY}.apps.googleusercontent.com`,
 }: {
   onGoogleLogin: (userId: string, name: string) => void;
-  clientId: string
+  clientId: string;
 }) => {
   const onSuccess = async (response: any) => {
     const {
