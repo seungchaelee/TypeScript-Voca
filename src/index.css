@@ -41,12 +41,12 @@ a {
 }
 
 .header .link {
-  border: 1px solid #333;
+  border: 2px solid #333;
   padding: 10px;
-  margin-left: 10px;
-  background-color: #efefef;
+  margin-left: 15px;
+  background-color: #fff;
   font-weight: bold;
-  border-radius: 4px;
+  border-radius: 10px;
 }
 
 .list_day {
