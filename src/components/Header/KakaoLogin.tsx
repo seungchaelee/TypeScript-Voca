@@ -7,7 +7,7 @@ const KakaoLoginButton = ({
 }) => {
   const kakaoOnSuccess = (data: any) => {
     console.log(data)
-    const idToken = data.response.id_token  // 인가코드 백엔드로 전달
+    // const idToken = data.response.id_token  // 인가코드 백엔드로 전달
   }
   const kakaoOnFailure = (error: any) => {
     console.log(error);

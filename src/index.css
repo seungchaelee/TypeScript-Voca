@@ -67,7 +67,7 @@ a {
   color: #fff;
   text-align: center;
   border-radius: 10px;
-  background-color: dodgerblue;
+  background-color: pink;
 }
 
 table {
@@ -95,7 +95,7 @@ table td:first-child {
 .btn_del {
   margin-left: 10px;
   color: #fff;
-  background-color: firebrick;
+  background-color: red;
 }
 
 button {
@@ -107,7 +107,7 @@ button {
   border-radius: 6px;
   padding: 10px 20px;
   color: #fff;
-  background-color: dodgerblue;
+  background-color: skyblue;
 }
 
 .input_area {
