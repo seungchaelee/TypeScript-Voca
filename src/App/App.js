@@ -8,7 +8,7 @@ import CreateWord from '../components/Page/CreateWord';
 import CreateDay from '../components/Page/CreateDay';
 import EmptyPage from '../components/Page/EmptyPage';
 import GoogleLoginButton from "../components/Header/GoogleLogin";
-import SocialKakao from "../components/Header/KakaoLogin";
+import KakaoLoginButton from "../components/Header/KakaoLogin";
 
 const Background = styled.div`
   background-color: #e6e6fa;
@@ -23,7 +23,7 @@ function App() {
       <div className="App">
         <Background>
           <GoogleLoginButton />
-          <SocialKakao />
+          <KakaoLoginButton />
           <Header />
           <Routes>
             <Route path='/' element={<DayList />} />
