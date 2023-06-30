@@ -1,14 +1,17 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
-import './App.css';
+import { Suspense, lazy } from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import "./App.css";
 import styled from "styled-components";
-import Header from '../components/Header/Header';
-import DayList from '../components/Page/DayList';
-import Day from '../components/Page/Day';
-import CreateWord from '../components/Page/CreateWord';
-import CreateDay from '../components/Page/CreateDay';
-import EmptyPage from '../components/Page/EmptyPage';
-import GoogleLoginButton from "../components/Header/GoogleLogin";
-import KakaoLoginButton from "../components/Header/KakaoLogin";
+import Loading from "../components/Loading/Loading";
+
+import Header from "../components/Header/Header";
+import DayList from "../components/Page/DayList";
+import Day from "../components/Page/Day";
+const CreateWord = lazy(() => import("../components/Page/CreateWord"));
+const CreateDay = lazy(() => import("../components/Page/CreateDay"));
+const EmptyPage = lazy(() => import("../components/Page/EmptyPage"));
+const GoogleLoginButton = lazy(() => import("../components/Header/GoogleLogin"));
+const KakaoLoginButton = lazy(() => import("../components/Header/KakaoLogin"));
 
 const Background = styled.div`
   background-color: #e6e6fa;
@@ -21,18 +24,20 @@ function App() {
   return (
     <BrowserRouter>
       <div className="App">
-        <Background>
-          <GoogleLoginButton />
-          <KakaoLoginButton />
-          <Header />
-          <Routes>
-            <Route path='/' element={<DayList />} />
-            <Route path='/day/:day' element={<Day />} />
-            <Route path='/create_word' element={<CreateWord />} />
-            <Route path='/create_day' element={<CreateDay />} />
-            <Route path='*' element={<EmptyPage />} />
-          </Routes>
-        </Background>
+        <Suspense fallback={<Loading text="리스트 가져오는 중" />}>
+          <Background>
+            <GoogleLoginButton />
+            <KakaoLoginButton />
+            <Header />
+            <Routes>
+              <Route path="/" element={<DayList />} />
+              <Route path="/day/:day" element={<Day />} />
+              <Route path="/create_word" element={<CreateWord />} />
+              <Route path="/create_day" element={<CreateDay />} />
+              <Route path="*" element={<EmptyPage />} />
+            </Routes>
+          </Background>
+        </Suspense>
       </div>
     </BrowserRouter>
   );
