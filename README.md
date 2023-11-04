@@ -1,4 +1,6 @@
 # React TypeScript Project
+- **반드시 아래 Setup과 Development 부분을 읽어보세요.**
+- 문의는 id4720@gmail.com
 
 ## 📢 Introduction
 
@@ -18,9 +20,6 @@
 
 - JSON-Server → MongoDB로 변경
 - 사용자의 편의성을 위해 반응형으로 변경
-
-- **반드시 아래 Setup과 Development 부분을 읽어보세요.**
-- 문의는 id4720@gmail.com
 
 ## Setup (사전 설치)
 
