@@ -1,5 +1,7 @@
 import { useState } from "react";
 import Loading from "../Loading/Loading";
+import { useAppSelector, useAppDispatch } from "../../hooks/hooks";
+import { toggle } from "../../features/ShowSlice";
 
 interface IProps {
   words: IWord;
@@ -10,18 +12,20 @@ export interface IWord {
   eng: string;
   kor: string;
   isDone: boolean;
-  id: number;
+  id: any;
 }
 
 export default function Word({ words: w }: IProps) {
+  const isShow = useAppSelector(state => state.show.value);
+  const dispatch = useAppDispatch();
   const [words, setWords] = useState(w);
-  const [isShow, setIsShow] = useState(false);
   const [isDone, setIsDone] = useState(words.isDone);
   const [isLoading, setIsLoading] = useState(false);
+  // const [isShow, setIsShow] = useState(false);
 
-  function toggleShow() {
-    setIsShow(!isShow);
-  }
+  // function toggleShow() {
+  //   setIsShow(!isShow);
+  // }
 
   const toggleDone = async () => {
     const res = await fetch(`http://localhost:3001/words/${words.id}`, {
@@ -79,7 +83,7 @@ export default function Word({ words: w }: IProps) {
         <td>{words.eng}</td>
         <td>{isShow && words.kor}</td>
         <td>
-          <button onClick={toggleShow}>뜻 {isShow ? "숨기기" : "보기"}</button>
+          <button onClick={() => dispatch(toggle(words.id))}>뜻 {isShow ? "숨기기" : "보기"}</button>
           <button onClick={del} className="btn_del">
             {isLoading ? <Loading text="삭제 중" /> : "삭제"}
           </button>

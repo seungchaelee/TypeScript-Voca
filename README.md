@@ -1,4 +1,8 @@
-# React TypeScript Project
+# 나만의 TOEIC 단어장
+
+## 📚Stack
+React, TypeScript, React-Query, Webpack, OAuth, Styled-Components, JSON-Server
+
 - **반드시 아래 Setup과 Development 부분을 읽어보세요.**
 - 문의는 id4720@gmail.com
 
